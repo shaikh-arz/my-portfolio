@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<div class="custom-cursor"></div>
+
+<script>
+    const cursor = document.querySelector(".custom-cursor");
+
+    document.addEventListener("mousemove", function(e) {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+    });
+
+    const hoverElements = document.querySelectorAll(
+        "a, button, img, .card, .skill"
+    );
+
+    hoverElements.forEach(element => {
+
+        element.addEventListener("mouseenter", () => {
+            cursor.classList.add("hover");
+        });
+
+        element.addEventListener("mouseleave", () => {
+            cursor.classList.remove("hover");
+        });
+
+    });
+</script>
+<body>
+    <header>
+            <nav class="navbar">
+
+    <!-- LEFT SIDE -->
+
+    <div class="nav-left">
+        <a href="frontend.html">Home</a>
+
+        <a href="about .html">About</a>
+
+        <a href="skill.html">Skills</a>
+
+        <a href="certification.html">Certifications</a>
+
+        <a href="education.html">Education</a>
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+
+    <div class="nav-right">
+
+        <a href="contact.html" class="contact-btn">
+            Contact Me
+        </a>
+
+        <div class="menu-container">
+
+            <button class="menu-btn">
+                ⋮
+            </button>
+
+            <div class="dropdown">
+
+                <a href="about .html">About</a>
+
+                <a href="skill.html">Skills</a>
+
+                <a href="certification.html">Certifications</a>
+
+                <a href="education.html">Education</a>
+
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+    </header>
+<section>
+    <section>
+
+<h2>Education</h2>
+
+<div class="timeline">
+
+<h3>Bachelor's Degree</h3>
+
+<p><strong>UNITED INSTITUTE OF TECHNOLOGY</strong></p>
+
+<p>2025 – 2029</p>
+
+<p>Relevant Coursework:</p>
+
+<ul>
+<li>Programming</li>
+<li>Web Development</li>
+<li>Database Systems</li>
+<li>Computer Networks</li>
+</ul>
+
+</div>
+<div class="timeline">
+    <h3>Schooling</h3>
+    <p>High School:(2022)</p>
+    <p>EWING CHRISTIAN PUBLIC SCHOOL</p>
+    <P>Intermediate: (2025)</P>
+    <p>NATIONAL INSTITUTE OF OPEN SCHOOLING</p>
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2024 MOHD ARIZ | All Rights Reserved</p>
+
+</footer>
+    
+</body>
+</html>

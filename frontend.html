@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohd Ariz</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<div class="custom-cursor"></div>
+
+<script>
+    const cursor = document.querySelector(".custom-cursor");
+
+    document.addEventListener("mousemove", function(e) {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+    });
+
+    const hoverElements = document.querySelectorAll(
+        "a, button, img, .card, .skill"
+    );
+
+    hoverElements.forEach(element => {
+
+        element.addEventListener("mouseenter", () => {
+            cursor.classList.add("hover");
+        });
+
+        element.addEventListener("mouseleave", () => {
+            cursor.classList.remove("hover");
+        });
+
+    });
+</script>
+<body >
+
+<header>
+    <nav class="navbar">
+
+    <!-- LEFT SIDE -->
+
+    <div class="nav-left">
+
+        <a href="frontend.html">Home</a>
+
+        <a href="about .html">About</a>
+
+        <a href="skill.html">Skills</a>
+
+        <a href="certification.html">Certifications</a>
+
+        <a href="education.html">Education</a>
+
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+
+    <div class="nav-right">
+
+        <a href="contact.html" class="contact-btn">
+            Contact Me
+        </a>
+
+        <div class="menu-container">
+
+            <button class="menu-btn">
+                ⋮
+            </button>
+
+            <div class="dropdown">
+
+                <a href="about .html">About</a>
+
+                <a href="skill.html">Skills</a>
+
+                <a href="certification.html">Certifications</a>
+
+                <a href="education.html">Education</a>
+
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+    
+<div class="img">
+<img src="image.png" alt="Profile">
+</div>
+
+<h1>MOHD ARIZ</h1>
+
+<p>Student • Learner • Future Professional</p>
+
+
+
+
+</header>
+
+<div class="container">
+
+
+
+
+
+<section>
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>A responsive personal portfolio created using HTML and CSS.</p>
+</div>
+
+<div class="card">
+<h3> Website Development Using HTML & CSS</h3>
+<p>Designed and developed a responsive and user-friendly website using **HTML and CSS**. The project focused on creating a clean layout, attractive user interface, and smooth user experience. Implemented modern web design practices including responsive layouts, structured content organization, styling components, and visual enhancements to make the website compatible across different devices.
+
+**Technologies Used:**
+
+* HTML5
+* CSS3
+* Responsive Web Design
+
+**Key Features:**
+
+* Responsive design for mobile and desktop devices
+* Modern and clean user interface
+* Well-structured webpage layout
+* Custom styling and visual effects
+* Improved user experience through organized design
+</p>
+</div>
+
+<div class="card">
+<h3>Daily Expenses Tracker</h3>
+
+<p>
+A Python-based application developed during my Python with Data Science training
+to help users record, organize, and analyze their daily expenses. The project
+allows users to track spending, categorize expenses, calculate total expenditure,
+and generate simple insights for better financial management.
+</p>
+
+<p><strong>Technologies Used:</strong> Python, Pandas, NumPy, Matplotlib</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<p>Email: mohdariz6388@email.com</p>
+
+<p>Phone: +91 6389283906</p>
+
+<div class="social">
+
+<a href="https://www.linkedin.com/in/mohd-ariz-629148374">LinkedIn</a>
+
+<a href="https://github.com/shaikh-arz">GitHub</a>
+
+<a href="https://www.instagram.com/shaikh.arz_/">Instagram</a>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+<p>© 2024 MOHD ARIZ | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
