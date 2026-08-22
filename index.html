@@ -1,193 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mohd Ariz</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mohd Ariz</title>
+
+    <meta name="description" content="Mohd Ariz — Full Stack Developer Portfolio">
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     <link rel="icon" type="image/x-icon" href="image_6e5d3655.png">
 </head>
-<div class="custom-cursor"></div>
 
-<script>
-    const cursor = document.querySelector(".custom-cursor");
+<body>
 
-    document.addEventListener("mousemove", function(e) {
-        cursor.style.left = e.clientX + "px";
-        cursor.style.top = e.clientY + "px";
-    });
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-    const hoverElements = document.querySelectorAll(
-        "a, button, img, .card, .skill"
-    );
+    <!-- Background -->
+    <div class="background-grid"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
 
-    hoverElements.forEach(element => {
+    <!-- Navigation -->
+    <nav class="side-nav">
 
-        element.addEventListener("mouseenter", () => {
-            cursor.classList.add("hover");
-        });
-
-        element.addEventListener("mouseleave", () => {
-            cursor.classList.remove("hover");
-        });
-
-    });
-</script>
-<body >
-
-<header>
-    <nav class="navbar">
-
-    <!-- LEFT SIDE -->
-
-    <div class="nav-left">
-
-        <a href="index.html">Home</a>
-
-        <a href="about .html">About</a>
-
-        <a href="skill.html">Skills</a>
-
-        <a href="certification.html">Certifications</a>
-
-        <a href="education.html">Education</a>
-
-    </div>
-
-
-    <!-- RIGHT SIDE -->
-
-    <div class="nav-right">
-
-        <a href="contact.html" class="contact-btn">
-            Contact Me
+        <a href="#home" class="nav-link active" data-tooltip="Home">
+            <span>01</span>
         </a>
 
-        <div class="menu-container">
+        <a href="#about" class="nav-link" data-tooltip="About">
+            <span>02</span>
+        </a>
 
-            <button class="menu-btn">
-                ⋮
-            </button>
+        <a href="#skills" class="nav-link" data-tooltip="Skills">
+            <span>03</span>
+        </a>
 
-            <div class="dropdown">
+        <a href="#projects" class="nav-link" data-tooltip="Projects">
+            <span>04</span>
+        </a>
 
-                <a href="about .html">About</a>
+        <a href="#certifications" class="nav-link" data-tooltip="Certifications">
+            <span>05</span>
+        </a>
 
-                <a href="skill.html">Skills</a>
+        <a href="#education" class="nav-link" data-tooltip="Education">
+            <span>06</span>
+        </a>
 
-                <a href="certification.html">Certifications</a>
+        <a href="#contact" class="nav-link" data-tooltip="Contact">
+            <span>07</span>
+        </a>
 
-                <a href="education.html">Education</a>
+    </nav>
 
-                <a href="contact.html">Contact</a>
+
+    <!-- Main -->
+    <main>
+
+        <!-- ================= HOME ================= -->
+
+        <section id="home" class="hero section">
+
+            <div class="hero-content reveal">
+
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    Available for opportunities
+                </p>
+
+                <h1>
+                    Hi, I'm
+                    <span class="gradient-text">Mohd Ariz</span>
+                </h1>
+
+                <h2>
+                    Full Stack
+                    <span>Developer.</span>
+                </h2>
+
+                <p class="hero-description">
+                    I design and build modern, scalable and interactive
+                    web applications with clean code and thoughtful
+                    user experiences.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn btn-primary">
+                        View Projects
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Contact Me
+                    </a>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://github.com/shaikh-arz" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/mohd-ariz-629148374/" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="https://x.com/MohdAriz173516" target="_blank" aria-label="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="mailto:mohdariz6388@gmail.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <!-- Profile Image -->
+
+            <div class="hero-image reveal">
+
+                <div class="image-orbit orbit-one"></div>
+                <div class="image-orbit orbit-two"></div>
+
+                <div class="image-card">
+
+                    <!-- Put your image here -->
+                    <img src="image.png" alt="Mohd Ariz">
+
+                    <div class="image-overlay"></div>
+
+                    <div class="floating-tag tag-one">
+                        <span>⚡</span>
+                        Clean Code
+                    </div>
+
+                    <div class="floating-tag tag-two">
+                        <span>◆</span>
+                        Full Stack
+                    </div>
+
+                </div>
 
             </div>
 
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="section">
+
+            <div class="section-heading reveal">
+                <span>01 — ABOUT</span>
+                <h2>Building with purpose.</h2>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-text reveal">
+
+                    <p>
+                        I'm <strong>Mohd Ariz</strong>, a passionate Software Developer and Web
+                        Developer with a strong interest in building modern, responsive, and user-friendly web
+                        applications. I enjoy transforming ideas into functional digital solutions by combining clean
+                        code with creative design. I have a solid foundation in HTML, CSS, JavaScript, and Python, along
+                        with knowledge gained through my Diploma in Computer Application (DCA) and Python with Data
+                        Science summer training. I continuously explore new technologies and work on projects that
+                        strengthen my technical and problem-solving skills. As a lifelong learner, I believe in
+                        continuous improvement and enjoy taking on new challenges that help me grow both personally and
+                        professionally. My goal is to contribute to innovative projects, create meaningful user
+                        experiences, and build a successful career in software and web development. Outside of coding, I
+                        enjoy learning emerging technologies, improving my development skills, and creating projects
+                        that solve real-world problems.
+                    </p>
+                </div>
+
+
+                <div class="about-stats reveal">
+
+                    <div class="stat-card">
+                        <strong>01</strong>
+                        <span>Developer</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <strong>∞</strong>
+                        <span>Learning Mindset</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <strong>24/7</strong>
+                        <span>Curiosity</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <strong>100%</strong>
+                        <span>Passion</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section id="skills" class="section">
+
+            <div class="section-heading reveal">
+                <span>02 — SKILLS</span>
+                <h2>My technical toolkit.</h2>
+            </div>
+
+            <div class="skills-container">
+
+                <div class="skill-card reveal">
+                    <div class="skill-number">01</div>
+                    <h3>Frontend</h3>
+
+                    <div class="skill-list">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React.js</span>
+                        <span>Responsive Design</span>
+                    </div>
+                </div>
+
+
+                <div class="skill-card reveal">
+                    <div class="skill-number">02</div>
+                    <h3>Backend</h3>
+
+                    <div class="skill-list">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>REST APIs</span>
+                        <span>Authentication</span>
+                        <span>Server Development</span>
+                    </div>
+                </div>
+
+
+                <div class="skill-card reveal">
+                    <div class="skill-number">03</div>
+                    <h3>Database</h3>
+
+                    <div class="skill-list">
+                        <span>MongoDB</span>
+                        <span>MySQL</span>
+                        <span>Database Design</span>
+                        <span>CRUD</span>
+                    </div>
+                </div>
+
+
+                <div class="skill-card reveal">
+                    <div class="skill-number">04</div>
+                    <h3>Tools</h3>
+
+                    <div class="skill-list">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>Postman</span>
+                        <span>npm</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section id="projects" class="section">
+
+            <div class="section-heading reveal">
+                <span>03 — PROJECTS</span>
+                <h2>Things I've built.</h2>
+            </div>
+
+
+            <div class="projects-grid">
+
+                <!-- Project 01 -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+                        <span class="project-index">01</span>
+
+                        <a href="https://github.com/shaikh-arz/Daily-Expense-Tracker.git" target="_blank"
+                            class="project-link">
+                            ↗
+                        </a>
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            python project
+                        </p>
+
+                        <h3>Daily Expense Traker</h3>
+
+                        <p>
+                            The Daily Expense Tracker helps users keep track of their daily spending. Users can add
+                            expenses, view recorded expenses, and monitor their total expenditure.
+                        </p>
+
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Data Handling</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 02 -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+                        <span class="project-index">02</span>
+
+                        <a href="https://github.com/shaikh-arz/Skill-Based-Section-c.git" target="_blank"
+                            class="project-link">
+                            ↗
+                        </a>
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            Frontend Project
+                        </p>
+
+                        <h3>Developed Skills</h3>
+
+                        <p>
+                            practicing my skills in HTML, CSS and Javascript by creating a skill-based section for my
+                            portfolio website
+                        </p>
+
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 03 -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+                        <span class="project-index">03</span>
+
+                        <a href="https://github.com/shaikh-arz/my-portfolio.git" target="_blank" class="project-link">
+                            ↗
+                        </a>
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            Backend Project
+                        </p>
+
+                        <h3>PORTFOLIO</h3>
+
+                        <p>
+                            In this project, I was created a Portflio website using HTML, CSS, and javascript. The
+                            website showcase my skills, projects, and contact inforation.
+                        </p>
+
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CERTIFICATIONS ================= -->
+
+        <section id="certifications" class="section">
+
+            <div class="section-heading reveal">
+                <span>04 — CERTIFICATIONS</span>
+                <h2>Learning never stops.</h2>
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-year">
+                            2026
+                        </span>
+
+                        <h3>Certificate of Summer Training </h3>
+
+                        <p>
+                            Issued by — United Global Infoservices Pvt. Ltd.
+                        </p>
+
+                        <a href="https://lnkd.in/p/gjAvr4eX" target="_blank">
+                            View Certificate ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-year">
+                            2026
+                        </span>
+
+                        <h3>Certificate of Appreciation</h3>
+
+                        <p>
+                            Issued by — United group of institutions.
+                        </p>
+
+                        <a href="https://lnkd.in/p/gXKWRFfw" target="_blank">
+                            View Certificate ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EDUCATION ================= -->
+
+        <section id="education" class="section">
+
+            <div class="section-heading reveal">
+                <span>05 — EDUCATION</span>
+                <h2>My academic journey.</h2>
+            </div>
+
+
+            <div class="education-card reveal">
+
+                <div class="education-year">
+                    2021 — 2022
+                </div>
+
+                <div class="education-info">
+
+                    <p class="education-type">
+                        High School
+                    </p>
+
+                    <h3>
+                        Ewing Christian Public School, Prayagraj.
+                    </h3>
+
+                    <p>
+                       I am doing my high school education here.
+                    </p>
+
+                </div>
+
+                <div class="education-arrow">
+                    ↗
+                </div>
+
+            </div>
+
+
+            <div class="education-card reveal">
+
+                <div class="education-year">
+                    2024 — 2025
+                </div>
+
+                <div class="education-info">
+
+                    <p class="education-type">
+                        Intermediate
+                    </p>
+
+                    <h3>
+                        National Institute of Open Schooling, Prayagraj.
+                    </h3>
+
+                    <p>
+                        I am doing my intermediate education here. with PCM stream 
+                    </p>
+
+                </div>
+
+                <div class="education-arrow">
+                    ↗
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="contact-section section">
+
+            <div class="contact-box reveal">
+
+                <p class="eyebrow">
+                    06 — CONTACT
+                </p>
+
+                <h2>
+                    Let's build something
+                    <span>great.</span>
+                </h2>
+
+                <p>
+                    Have an idea, project or opportunity?
+                    Let's connect and create something meaningful.
+                </p>
+
+                <a href="mailto:mohdariz6388@gmail.com" class="contact-email">
+                    mohdariz6388@gmail.com
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-left">
+            <strong>Mohd Ariz</strong>
+            <span>Full Stack Developer</span>
         </div>
 
-    </div>
+        <div class="footer-center">
+            © 2026 Mohd Ariz. All rights reserved.
+        </div>
 
-</nav>
+        <div class="footer-right">
 
+            <a href="https://github.com/shaikh-arz" target="_blank">
+                GitHub
+            </a>
 
-    
-<div class="img">
-<img src="image.png" alt="Profile">
-</div>
-<div class="intro">
-<h1>MOHD ARIZ</h1>
+            <a href="https://www.linkedin.com/in/mohd-ariz-629148374/" target="_blank">
+                LinkedIn
+            </a>
 
-<p>Student • Learner • Future Professional</p>
-<div/>
+        </div>
 
-
-
-</header>
-
-<div class="container">
+    </footer>
 
 
-
-
-
-<section>
-
-<h2>Projects</h2>
-
-<div class="projects">
-
-<div class="card">
-<h3>Portfolio Website</h3>
-<p>A responsive personal portfolio created using HTML and CSS.</p>
-</div>
-
-<div class="card">
-<h3> Website Development Using HTML & CSS</h3>
-<p>Designed and developed a responsive and user-friendly website using **HTML and CSS**. The project focused on creating a clean layout, attractive user interface, and smooth user experience. Implemented modern web design practices including responsive layouts, structured content organization, styling components, and visual enhancements to make the website compatible across different devices.
-
-**Technologies Used:**
-
-* HTML5
-* CSS3
-* Responsive Web Design
-
-**Key Features:**
-
-* Responsive design for mobile and desktop devices
-* Modern and clean user interface
-* Well-structured webpage layout
-* Custom styling and visual effects
-* Improved user experience through organized design
-</p>
-</div>
-
-<div class="card">
-<h3>Daily Expenses Tracker</h3>
-
-<p>
-A Python-based application developed during my Python with Data Science training
-to help users record, organize, and analyze their daily expenses. The project
-allows users to track spending, categorize expenses, calculate total expenditure,
-and generate simple insights for better financial management.
-</p>
-
-<p><strong>Technologies Used:</strong> Python, Pandas, NumPy, Matplotlib</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section id="contact" class="contact">
-
-<h2>Contact</h2>
-
-<p>Email: mohdariz6388@gmail.com</p>
-
-<div class="social">
-
-<a href="https://www.linkedin.com/in/mohd-ariz-629148374">LinkedIn</a>
-
-<a href="https://github.com/shaikh-arz">GitHub</a>
-
-<a href="https://www.instagram.com/shaikh.arz_/">Instagram</a>
-
-</div>
-
-</section>
-
-</div>
-
-<footer>
-
-<p>© 2026 MOHD ARIZ | All Rights Reserved</p>
-
-</footer>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
